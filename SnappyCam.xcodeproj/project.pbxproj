@@ -14,6 +14,9 @@
 		C643C92E1A53E1EC00014F27 /* SnappyCamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C643C92D1A53E1EC00014F27 /* SnappyCamTests.m */; };
 		C643C93A1A53F59B00014F27 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C643C9381A53F59B00014F27 /* MenuViewController.m */; };
 		C643C93B1A53F59B00014F27 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C643C9391A53F59B00014F27 /* MenuViewController.xib */; };
+		C643C93F1A54129600014F27 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C643C93D1A54129600014F27 /* FilterViewController.m */; };
+		C643C9401A54129600014F27 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C643C93E1A54129600014F27 /* FilterViewController.xib */; };
+		DDAC1B64739A1E5ED516A81F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670D71669AEDC3828E8D3B2B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		670D71669AEDC3828E8D3B2B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FBAD2A24DF99679E5A2187 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C643C90E1A53E1EC00014F27 /* SnappyCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnappyCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C643C9121A53E1EC00014F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C643C9131A53E1EC00014F27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,10 @@
 		C643C9371A53F59B00014F27 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		C643C9381A53F59B00014F27 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		C643C9391A53F59B00014F27 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		C643C93C1A54129600014F27 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		C643C93D1A54129600014F27 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		C643C93E1A54129600014F27 /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		E9174680B89E2E68A50BD369 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAC1B64739A1E5ED516A81F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D9E50377375814AADDEF65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				670D71669AEDC3828E8D3B2B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5282F7394921E4965E4DF461 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9174680B89E2E68A50BD369 /* Pods.debug.xcconfig */,
+				80FBAD2A24DF99679E5A2187 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C643C9051A53E1EC00014F27 = {
 			isa = PBXGroup;
 			children = (
 				C643C9101A53E1EC00014F27 /* SnappyCam */,
 				C643C92A1A53E1EC00014F27 /* SnappyCamTests */,
 				C643C90F1A53E1EC00014F27 /* Products */,
+				5282F7394921E4965E4DF461 /* Pods */,
+				01D9E50377375814AADDEF65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +118,9 @@
 				C643C9371A53F59B00014F27 /* MenuViewController.h */,
 				C643C9381A53F59B00014F27 /* MenuViewController.m */,
 				C643C9391A53F59B00014F27 /* MenuViewController.xib */,
+				C643C93C1A54129600014F27 /* FilterViewController.h */,
+				C643C93D1A54129600014F27 /* FilterViewController.m */,
+				C643C93E1A54129600014F27 /* FilterViewController.xib */,
 			);
 			path = SnappyCam;
 			sourceTree = "<group>";
@@ -126,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C643C9311A53E1EC00014F27 /* Build configuration list for PBXNativeTarget "SnappyCam" */;
 			buildPhases = (
+				B85FC0D2834B8D473A1FC304 /* Check Pods Manifest.lock */,
 				C643C90A1A53E1EC00014F27 /* Sources */,
 				C643C90B1A53E1EC00014F27 /* Frameworks */,
 				C643C90C1A53E1EC00014F27 /* Resources */,
+				E66663B894D6EC25EB83F98C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +235,7 @@
 			files = (
 				C643C9221A53E1EC00014F27 /* LaunchScreen.xib in Resources */,
 				C643C91F1A53E1EC00014F27 /* Images.xcassets in Resources */,
+				C643C9401A54129600014F27 /* FilterViewController.xib in Resources */,
 				C643C93B1A53F59B00014F27 /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +249,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B85FC0D2834B8D473A1FC304 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E66663B894D6EC25EB83F98C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C643C90A1A53E1EC00014F27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +289,7 @@
 			files = (
 				C643C9171A53E1EC00014F27 /* AppDelegate.m in Sources */,
 				C643C9141A53E1EC00014F27 /* main.m in Sources */,
+				C643C93F1A54129600014F27 /* FilterViewController.m in Sources */,
 				C643C93A1A53F59B00014F27 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +402,7 @@
 		};
 		C643C9321A53E1EC00014F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9174680B89E2E68A50BD369 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SnappyCam/Info.plist;
@@ -343,6 +413,7 @@
 		};
 		C643C9331A53E1EC00014F27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FBAD2A24DF99679E5A2187 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SnappyCam/Info.plist;
@@ -404,6 +475,7 @@
 				C643C9331A53E1EC00014F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C643C9341A53E1EC00014F27 /* Build configuration list for PBXNativeTarget "SnappyCamTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +484,7 @@
 				C643C9361A53E1EC00014F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

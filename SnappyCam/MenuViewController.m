@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "FilterViewController.h"
 
 @interface MenuViewController ()
 - (IBAction)takePhoto:(id)sender;
@@ -32,6 +33,10 @@
     UIImage* img = [info objectForKey:UIImagePickerControllerOriginalImage];
     [self.chosenImage setImage:img];
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    
+    FilterViewController *fvc = [[FilterViewController alloc] initWithChosenImage:img];
+    [self.navigationController pushViewController:fvc
+                                         animated:YES];
 }
 
 /*
