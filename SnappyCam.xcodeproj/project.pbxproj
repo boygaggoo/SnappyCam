@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		C643C9141A53E1EC00014F27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C643C9131A53E1EC00014F27 /* main.m */; };
 		C643C9171A53E1EC00014F27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C643C9161A53E1EC00014F27 /* AppDelegate.m */; };
-		C643C91A1A53E1EC00014F27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C643C9191A53E1EC00014F27 /* ViewController.m */; };
-		C643C91D1A53E1EC00014F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C643C91B1A53E1EC00014F27 /* Main.storyboard */; };
 		C643C91F1A53E1EC00014F27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C643C91E1A53E1EC00014F27 /* Images.xcassets */; };
 		C643C9221A53E1EC00014F27 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C643C9201A53E1EC00014F27 /* LaunchScreen.xib */; };
 		C643C92E1A53E1EC00014F27 /* SnappyCamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C643C92D1A53E1EC00014F27 /* SnappyCamTests.m */; };
+		C643C93A1A53F59B00014F27 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C643C9381A53F59B00014F27 /* MenuViewController.m */; };
+		C643C93B1A53F59B00014F27 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C643C9391A53F59B00014F27 /* MenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		C643C9131A53E1EC00014F27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C643C9151A53E1EC00014F27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C643C9161A53E1EC00014F27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C643C9181A53E1EC00014F27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C643C9191A53E1EC00014F27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C643C91C1A53E1EC00014F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C643C91E1A53E1EC00014F27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C643C9211A53E1EC00014F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C643C9271A53E1EC00014F27 /* SnappyCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C643C92C1A53E1EC00014F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C643C92D1A53E1EC00014F27 /* SnappyCamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnappyCamTests.m; sourceTree = "<group>"; };
+		C643C9371A53F59B00014F27 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		C643C9381A53F59B00014F27 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		C643C9391A53F59B00014F27 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +83,12 @@
 			children = (
 				C643C9151A53E1EC00014F27 /* AppDelegate.h */,
 				C643C9161A53E1EC00014F27 /* AppDelegate.m */,
-				C643C9181A53E1EC00014F27 /* ViewController.h */,
-				C643C9191A53E1EC00014F27 /* ViewController.m */,
-				C643C91B1A53E1EC00014F27 /* Main.storyboard */,
 				C643C91E1A53E1EC00014F27 /* Images.xcassets */,
 				C643C9201A53E1EC00014F27 /* LaunchScreen.xib */,
 				C643C9111A53E1EC00014F27 /* Supporting Files */,
+				C643C9371A53F59B00014F27 /* MenuViewController.h */,
+				C643C9381A53F59B00014F27 /* MenuViewController.m */,
+				C643C9391A53F59B00014F27 /* MenuViewController.xib */,
 			);
 			path = SnappyCam;
 			sourceTree = "<group>";
@@ -199,9 +199,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C643C91D1A53E1EC00014F27 /* Main.storyboard in Resources */,
 				C643C9221A53E1EC00014F27 /* LaunchScreen.xib in Resources */,
 				C643C91F1A53E1EC00014F27 /* Images.xcassets in Resources */,
+				C643C93B1A53F59B00014F27 /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C643C91A1A53E1EC00014F27 /* ViewController.m in Sources */,
 				C643C9171A53E1EC00014F27 /* AppDelegate.m in Sources */,
 				C643C9141A53E1EC00014F27 /* main.m in Sources */,
+				C643C93A1A53F59B00014F27 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C643C91B1A53E1EC00014F27 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C643C91C1A53E1EC00014F27 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C643C9201A53E1EC00014F27 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
